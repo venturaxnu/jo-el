@@ -1,29 +1,23 @@
 import java.util.Scanner;
 
 public class Main {
-    void main (){
-        //INICI_VARIABLES
+    public static void main(String[] args){
+        //INICI VARIABLES
 
-        int vots_jiden = 0;
-        int vots_drump = 0;
         Scanner llegir = new Scanner(System.in);
+        int any = 0;
 
-        //FINAL_VARIABLES
+        //FINAL VARIABLES
 
-        //INICI_PROGRAMA
+        //INICI PROGRAMA
 
-        //System.out.println("Introdueix vots de Jiden:");
-        vots_jiden = llegir.nextInt();
-        //System.out.println("Introdueix vots de Drump:");
-        vots_drump = llegir.nextInt();
-        if (vots_jiden > vots_drump) {
-            System.out.println("Jiden");
-        } else  if (vots_jiden < vots_drump) {
-            System.out.println("Drump");
-        } else {
-            System.out.println("No");
+        any = llegir.nextInt();
+        if (any >= 1945 && any <= 1965){
+            System.out.println("ok boomer");
+        }  else {
+            System.out.println("nah");
         }
 
-        //FINAL_PROGRAMA
+        //FINAL PROGRAMA
     }
 }
