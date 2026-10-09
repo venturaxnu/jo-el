@@ -1,33 +1,27 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main{
     public static void main(String[] args){
 
         //INICI VARIABLES
 
         Scanner llegir = new Scanner(System.in);
-        int num = 0;
-        boolean esdivisible = false;
-        double divisio = 0;
-        //FINAL VARIABLES
+        int c1 = 0;
+        int c2 = 0;
+        int c3 = 0;
 
+        //FINAL VARIABLES
 
         //INICI PROGRAMA
 
-        num = llegir.nextInt();
+        c1 = llegir.nextInt();
+        c2 = llegir.nextInt();
+        c3 = llegir.nextInt();
 
-        for (int i = 1; i < 10; i++){
-            if (num % i == 0){
-                esdivisible = true;
-            } else {
-                esdivisible = false;
-                System.out.println("NO");
-                i = 10;
-            }
-        }
-
-        if (esdivisible){
+        if (c1 == c2 || c1 == c3 || c2 == c3){
             System.out.println("SI");
+        } else {
+            System.out.println("NO");
         }
 
         //FINAL PROGRAMA
