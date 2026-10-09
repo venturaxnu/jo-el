@@ -4,21 +4,25 @@ public class Main {
     void main (){
         //INICI_VARIABLES
 
-        int edat = 0;
+        int vots_jiden = 0;
+        int vots_drump = 0;
         Scanner llegir = new Scanner(System.in);
 
         //FINAL_VARIABLES
 
         //INICI_PROGRAMA
 
-        //System.out.println("Introdueix la teva edat:");
-        edat = llegir.nextInt();
-
-        if (edat < 32){
-            System.out.println("SI");
+        //System.out.println("Introdueix vots de Jiden:");
+        vots_jiden = llegir.nextInt();
+        //System.out.println("Introdueix vots de Drump:");
+        vots_drump = llegir.nextInt();
+        if (vots_jiden > vots_drump) {
+            System.out.println("Jiden");
+        } else  if (vots_jiden < vots_drump) {
+            System.out.println("Drump");
         } else {
-                System.out.println("NO");
-            }
+            System.out.println("No");
+        }
 
         //FINAL_PROGRAMA
     }
