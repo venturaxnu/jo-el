@@ -2,29 +2,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-
         //INICI VARIABLES
 
         Scanner llegir = new Scanner(System.in);
-        int numeroA = 0;
-        int numeroB = 0;
-        int sortida = 0;
 
-        //FINAL VARIABLES
+        int jugador1 = 0;
+        int jugador2 = 0;
+        int numeroguanyador = 0;
+        String sortida = "ERROR";
 
+        //FI VARIABLES
 
         //INICI PROGRAMA
 
-        numeroA = llegir.nextInt();
-        numeroB = llegir.nextInt();
+        jugador1 = llegir.nextInt();
+        jugador2 = llegir.nextInt();
 
-        if (numeroA > numeroB)
-            sortida = numeroA - numeroB;
-         else if (numeroA < numeroB)
-             sortida = numeroB - numeroA;
+        if (jugador1 = 1 && jugador2 = 2){
+
+        }
+
+        if (jugador1 == jugador2){
+            sortida = "EMPAT";
+        } else if (jugador1&& jugador2 = 2)
+
 
         System.out.println(sortida);
 
-        //FINAL PROGRAMA
+        //FI PROGRAMA
     }
 }
